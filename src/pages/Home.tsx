@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import WordCard from '../components/Wordcard.tsx'
 import WorkChip from '../components/Workchip.tsx'
-import { words, overview, goals, works } from '../data/homeData.ts'
-
+import PcbTraces from '../components/pcbTraces.tsx'
+import { words, overview, goals, works} from '../data/homeData.ts'
 export default function Home() {
   return (
     <main className="home">
+      <PcbTraces/>
+      <div className="trace" aria-hidden="true"><span className="trace-pulse" /></div>
       <section className="hero">
         <div>
           <p className="label">Hello, I’m</p>
@@ -46,13 +48,14 @@ export default function Home() {
       </section>
 
       <section className="featured">
+        {/* <PcbTraces  /> */}
         <h2 className="label">Featured work</h2>
         <div className="chips">
           {works.map((w) => <WorkChip key={w.code} {...w} />)}
         </div>
       </section>
 
-      <footer className="footer">Contact through the school-approved process</footer>
+      <footer className="footer"></footer>
     </main>
   )
 }
