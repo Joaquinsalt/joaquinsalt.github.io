@@ -1,78 +1,46 @@
-# React + TypeScript + Vite
+# Joaquin Barrera | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website. It introduces who I am and documents my UTRGV research, NASA HUNCH work, and personal projects.
 
-Currently, two official plugins are available:
+## Link to website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Built with
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- [React](https://react.dev): builds the page from reusable components
+- [TypeScript](https://www.typescriptlang.org): adds types to catch mistakes early
+- [Vite](https://vite.dev): runs the development server and builds the site
+- [React Router](https://reactrouter.com): handles navigation between pages
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project structure
 
 ```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+src/
+├── main.tsx          Starts the app and sets up the router
+├── App.tsx           Navbar and the list of page routes
+├── components/       Reusable pieces (Navbar, WordCard, WorkChip, StatusPill)
+├── data/homeData.ts     All homepage text and content
+├── pages/            One file per page
+└── styles/index.css  Colors, layout, and phone styles
 ```
+
+## Editing content
+
+Homepage text lives in `src/data/homeData.ts`, so content can be updated without touching the layout code. Project statuses must be one of: `planned`, `in progress`, `tested`, or `completed`.
+
+Colors are defined as variables at the top of `src/styles/index.css`. The phone layout is in the `@media (max-width: 900px)` section at the bottom.
+
+## Pages
+
+| Page | Status |
+|---|---|
+| Home | In progress |
+| About Me and Goals | Planned |
+| Internships and Work Experience | Planned |
+| UTRGV Research | Planned |
+| NASA HUNCH | Planned |
+| Projects and Technical Skills | Planned |
+| Resume and Credentials | Planned |
+| Activities, Leadership and Service | Planned |
+| Contact | Planned |
+
