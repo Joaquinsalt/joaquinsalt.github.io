@@ -1,18 +1,23 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
+
     <script>
-      const path = window.location.pathname;
-      const search = window.location.search;
-      const hash = window.location.hash;
+      const basePath = '/JoaquinBarrera.github.io/';
+
+      const requestedPath =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
 
       window.location.replace(
-        "/" + "?p=" + encodeURIComponent(path + search + hash),
+        basePath + '?p=' + encodeURIComponent(requestedPath)
       );
     </script>
   </head>
+
   <body>
     Redirecting...
   </body>
