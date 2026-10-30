@@ -21,8 +21,8 @@ export default function Home() {
 
         <figure className="photo-wrap">
           {/* Swap this div for <img src="/me.jpg" alt="..." className="photo" /> once you have an approved photo */}
-          <div className="photo" role="img" aria-label="Joaquin Barrera, smiling, plain background">
-            Photo
+          <div className="photo" role="img" aria-label="Profile Picture">
+          <img src="src/assets/pfp.png" alt="Photo of Joaquin Barrera" className="photo" />
           </div>
           <figcaption>Photo placeholder</figcaption>
         </figure>

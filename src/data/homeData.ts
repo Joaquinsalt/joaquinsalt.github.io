@@ -21,7 +21,7 @@ export const overview =
   `I am a student at Science Academy who loves electronics, especially semiconductor devices. I enjoy learning how hardware works and building things that interest me. Through my UTRGV internship, my team and I research hardware for a 3D printer that uses cameras, sensors, and vision-language-action (VLA) models to find and fix printing mistakes. For NASA HUNCH, I lead the hardware for an AI medical diagnostic system for astronauts, working with circuits and sensors. On my own, I am designing an 8-bit CPU to learn how computers work. These experiences help me grow in CAD, electronics, research, teamwork, and public speaking. After high school, I am considering UTRGV to study Electrical Engineering, earn my bachelor’s and master’s degrees, and possibly pursue a PhD. I am exploring careers in semiconductor engineering, hardware engineering, and embedded systems, in that order. My next steps are to finish my current projects strong, start new ones, and take more opportunities to speak publicly.`
 
 export const goals = [
-  { label: 'Colleges', text: 'UTRGV (considering). Add others here.' },
+  { label: 'Colleges', text: 'UTRGV (considering).' },
   { label: 'Major', text: 'Electrical engineering: bachelor’s, master’s, maybe a PhD' },
   { label: 'Career', text: 'Semiconductor, then hardware, then embedded systems' },
 ]
