@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
-  base: '/Joaquinsalt/',
+  base: '/JoaquinBarrera.github.io/',
 })
