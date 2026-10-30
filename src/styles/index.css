@@ -70,7 +70,7 @@ a {
 .links {
   display: flex;
   gap: 1.25rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .links a {
@@ -100,7 +100,7 @@ a {
 /* ---------- Shared ---------- */
 .label {
   font-family: var(--mono);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--gold);
   letter-spacing: 0.06em;
 }
@@ -164,7 +164,7 @@ a {
 .buttons {
   display: flex;
   gap: 0.75rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -265,7 +265,7 @@ a {
 }
 
 .small-label {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 /* ---------- Chips ---------- */
