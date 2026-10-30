@@ -3,6 +3,8 @@ import WordCard from '../components/Wordcard.tsx'
 import WorkChip from '../components/Workchip.tsx'
 import PcbTraces from '../components/pcbTraces.tsx'
 import { words, overview, goals, works} from '../data/homeData.ts'
+import profilePhoto from '../assets/pfp.png'
+
 export default function Home() {
   return (
     <main className="home">
@@ -22,7 +24,7 @@ export default function Home() {
         <figure className="photo-wrap">
           {/* Swap this div for <img src="/me.jpg" alt="..." className="photo" /> once you have an approved photo */}
           {/* <div className="photo" role="img" aria-label="Profile Picture"> */}
-          <img src="src/assets/pfp.png" alt="Photo of Joaquin Barrera" className="photo" />
+          <img src="{profilePhoto}" alt="Photo of Joaquin Barrera" className="photo" />
           {/* </div> */}
           <figcaption>Photo placeholder</figcaption>
         </figure>
