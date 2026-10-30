@@ -3,21 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
-
     <script>
-      const basePath = '/JoaquinBarrera.github.io/';
-
-      const requestedPath =
+      const path =
         window.location.pathname +
         window.location.search +
         window.location.hash;
 
       window.location.replace(
-        basePath + '?p=' + encodeURIComponent(requestedPath)
+        '/' + '?p=' + encodeURIComponent(path)
       );
     </script>
   </head>
-
   <body>
     Redirecting...
   </body>
