@@ -2,9 +2,6 @@
 
 My personal portfolio website. It introduces who I am and documents my UTRGV research, NASA HUNCH work, and personal projects.
 
-## Link to website
-
-
 ## Built with
 
 - [React](https://react.dev): builds the page from reusable components
