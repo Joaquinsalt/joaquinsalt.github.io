@@ -26,7 +26,6 @@ export default function Home() {
           {/* <div className="photo" role="img" aria-label="Profile Picture"> */}
           <img src={profilePhoto} alt="Photo of Joaquin Barrera" className="photo" />
           {/* </div> */}
-          <figcaption>Photo placeholder</figcaption>
         </figure>
       </section>
 
