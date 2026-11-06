@@ -23,7 +23,7 @@ export const overview =
 export const goals = [
   { label: 'Colleges', text: 'UTRGV or A&M (considering) ' },
   { label: 'Major', text: 'Electrical engineering: bachelor’s, master’s, maybe a PhD' },
-  { label: 'Career', text: 'Semiconductor, then hardware, then embedded systems' },
+  { label: 'Career', text: 'Semiconductor' },
 ]
 
 export const works: Work[] = [
